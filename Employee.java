@@ -1,46 +1,28 @@
-package p1;
-
-import java.util.Scanner;
+package com.edu;
 
 public class Employee {
-	String name;
-	int age;
-	int phno;
+
+	private int eid;
+	private String ename;
+	private float esalary;
+	
+	
+	
+	
+	public Employee(int eid, String ename, float esalary) {
+		super();
+		this.eid = eid;
+		this.ename = ename;
+		this.esalary = esalary;
+	}
+
+
+
 
 	public void display() {
-		System.out.println("name=" +name);
-		System.out.println("age="  +age);
-		System.out.println("phno="  +phno);
-	
-		
-		
-		
+		System.out.println("Employee id=" +eid);
+		System.out.println("Employee name=" +ename);
+		System.out.println("Employee salary=" +esalary);
 	}
 
-	public void input() {
-		Scanner sc=new Scanner(System.in);
-		
-		System.out.println("Enter a name");
-	name=sc.nextLine();
-	System.out.println("Enter age");
-	age=sc.nextInt();
-	System.out.println("Enter phno");
-	phno=sc.nextInt();
-		
-		
-	}
-	public static void main(String args[]) {
-		Employee ob=new Employee();
-		Employee ob1=new Employee();
-		ob.input();
-		ob.display();
-		ob1.input();
-		ob1.display();
-		
-	}
-
-	
-		
-	}
-
-
+}
